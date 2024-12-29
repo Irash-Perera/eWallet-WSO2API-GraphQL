@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* body{
+  background: url("/background.jpg");
+  background-size: cover;
+} */
+.footer{
+  position: fixed;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: Roboto, Arial, sans-serif; 
+}
+
+.login-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.login-card-header{
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+}
+
+.login-card-body{
+  background: url(https://img.freepik.com/free-vector/hand-drawn-colorful-groovy-psychedelic-background_23-2149083920.jpg?t=st=1735491977~exp=1735495577~hmac=57cfae708af2ab42d526996248dd0f3859c0f1f77586f7837786df4238e84eb3&w=996);
+  width: 300px;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: -10px;
+  margin-bottom: -30px;
+
+  img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 30px;
+    color:rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.slogan{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color:rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 40px;
+}

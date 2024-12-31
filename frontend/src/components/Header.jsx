@@ -22,9 +22,11 @@ function Header() {
       <div className="header">
         <div className="header-content">
           <img src="/wallet.png" alt="Logo" />
-          <h4>{Greeting() + user}</h4>
+          <h4>{Greeting() + (user ? user : "Guest")}</h4>
         </div>
-        <button className="logout-button" onClick={handleLogout}>Logout</button>
+        {user && (
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
+        )}
       </div>
     </>
   )

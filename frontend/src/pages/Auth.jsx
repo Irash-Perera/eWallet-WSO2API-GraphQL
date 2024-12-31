@@ -2,6 +2,7 @@ import { useQuery, gql, useMutation } from '@apollo/client';
 import { useAuth } from "../context/AuthContext";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import homeimage from '../assets/homeimage.png';
 
 const GET_USER = gql`
   query GetUser($email: String!) {
@@ -80,6 +81,28 @@ function GetUser() {
     navigate('/dashboard');
   };
 
+  const redirectLogin = () => {
+    navigate('/login');
+  }
+
+  if (user === null) { 
+    return (
+      <>
+        <div className='home-container'>
+          <div className='home-title'>
+            <div className='home-logo'>
+              <img src='/wallet.png' alt='Logo' />
+              <h1>eWallet</h1>
+            </div>
+            <h3>Empowering Your Wallet, Anytime, Anywhere.</h3>
+            <button className='login-button' onClick={redirectLogin}>Try Now</button>
+          </div>
+          <img className="home-image" src={homeimage} alt='Home Image' />
+        </div>
+        
+      </>
+    )
+  }
   if (queryLoading) return <p>Loading...</p>;
   if (queryError) return <p>Error loading user data.</p>;
   if (mutationLoading) return <p>Loading...</p>;

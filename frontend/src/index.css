@@ -67,6 +67,63 @@
   margin-bottom: 0;
 }
 
+.home-title{
+  font-family: Poppins, Arial, sans-serif;
+  padding:50px;
+
+  h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -110px;
+    color: #5b5b5b;
+  }
+}
+
+.home-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  h1{
+    font-size: 8rem;
+    font-weight: 600;
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+}
+
+.home-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home-image{
+  width: 40vw;
+  margin-top: -50px;
+}
+
+.login-button{
+  background: none;
+  padding: 10px 20px;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-button:hover{
+  background: rgba(67, 64, 64, 0.932);
+  color: aliceblue;
+  transition: 0.3s;
+}
+
 .login-card{
   position: absolute;
   top: 50%;

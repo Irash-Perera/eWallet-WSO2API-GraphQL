@@ -4,6 +4,10 @@
   background: url("/background.jpg");
   background-size: cover;
 } */
+
+.main-container{
+  margin-top: 20vh;
+}
 .footer{
   position: fixed;
   background: rgba(255, 255, 255, 0.27);
@@ -22,6 +26,47 @@
   font-family: Roboto, Arial, sans-serif; 
 }
 
+.footer2 {
+  padding: 40px 0;
+  background-color: #ececec;
+  color: rgb(54, 51, 51);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 16px;
+}
+
+.footer2 ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer2 li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer2 ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer2 .ul a:hover {
+  opacity: 1;
+}
+
+
+.footer2 .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
 .login-card{
   position: absolute;
   top: 50%;
@@ -35,6 +80,7 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  min-height: 50vh;
 }
 
 .login-card-header{
@@ -43,10 +89,65 @@
   border-radius: 16px;
   backdrop-filter: blur(9.9px);
   -webkit-backdrop-filter: blur(9.9px);
+
+  h1{
+    font-weight: 600;
+  }
+
+  button{
+    background: none;
+    padding: 10px 20px;
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  button:hover{
+    background: rgba(67, 64, 64, 0.932);
+    color: aliceblue;
+    transition: 0.3s;
+  }
+}
+
+.welcome-card-header{
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+
+  h3{
+    margin-bottom: 30px;
+  }
+}
+
+.create-user-button{
+  background: none;
+  padding: 10px 20px;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.create-user-button:hover{
+  background: rgba(67, 64, 64, 0.932);
+  color: aliceblue;
+  transition: 0.3s;
 }
 
 .login-card-body{
   background: url(https://img.freepik.com/free-vector/hand-drawn-colorful-groovy-psychedelic-background_23-2149083920.jpg?t=st=1735491977~exp=1735495577~hmac=57cfae708af2ab42d526996248dd0f3859c0f1f77586f7837786df4238e84eb3&w=996);
+  width: 300px;
+}
+
+.welcome-card-body{
+  background: url(https://img.freepik.com/free-vector/vintage-geometric-groovy-pattern_23-2148870415.jpg?t=st=1735565077~exp=1735568677~hmac=3ee1b0d31ae95e9face004be3d7102397fd0ae2266ae179d20e8be0104f3e2ae&w=740);
   width: 300px;
 }
 
@@ -79,3 +180,330 @@
   font-family: 'Poppins', sans-serif;
   margin-bottom: 40px;
 }
+
+.header{
+  position:fixed;
+  background: rgba(238, 236, 236, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  z-index: 1000;
+  
+}
+
+.logout-button{
+  background: none;
+  border: black 1px solid;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.logout-button:hover{
+  background: rgba(67, 64, 64, 0.932);
+  color: aliceblue;
+  transition: 0.3s;
+}
+
+.header-content{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Poppins, Arial, sans-serif;
+  gap: 20px;
+
+  h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.dashboard-container {
+  min-height: 80vh;
+  margin-top: 20vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.dashboard-cards{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-logo {
+  margin-right: 1rem;
+}
+
+.dashboard-title {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.dashboard-welcome {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: -2rem;
+}
+
+
+
+.transactions-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  min-width: 30vw;
+}
+
+.transactions-header {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #bcbfc4;
+}
+
+.transactions-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: scroll;
+}
+
+.transactions-table th {
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #717070;
+  background-color: #ffffff;
+}
+
+.transactions-table td {
+  padding: 1rem 1.5rem;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.transactions-table tr:hover {
+  background-color: #eeede9;
+  transition: background-color 0.2s ease;
+}
+
+.transaction-amount {
+  font-weight: 500;
+}
+
+.transaction-amount.expense {
+  color: #dc2626;
+  font-size: 1.1rem;
+}
+
+.transaction-amount.income {
+  color: #059669;
+  font-size: 1.1rem;
+}
+
+.transaction-date {
+  color: #6b7280;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.error-message {
+  color: #dc2626;
+}
+
+.balance-card-outer{
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-card-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 90px;
+  margin-bottom: -40px;
+}
+
+.balance-title{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #111827;
+  /* margin-bottom: 1rem; */
+}
+
+.balance-amount{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.balance-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.pie-chart-card{
+  width: 60vw;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pie-chart-title{
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding-left: 20px;
+}
+
+.pie-chart{
+  font-size: 0.5rem;
+
+}
+
+.transaction-button{
+  background: none;
+  padding: 10px 20px;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.transaction-button:hover{
+  background: rgba(67, 64, 64, 0.932);
+  color: aliceblue;
+  transition: 0.3s;
+}
+
+.form-container{
+  margin-top: 20vh;
+}
+
+.form-card-body{
+  background: url(https://img.freepik.com/free-vector/color-abstract-shape-seamless-pattern_1409-4178.jpg?t=st=1735620052~exp=1735623652~hmac=6961dead58a8a41b8529546120c88beaeaa05c9ad32c6c88a39531ffe2c0cb60&w=996); 
+  background-size: cover;
+  width: 300px;
+}
+
+.form-card-form{
+  padding: 20px;
+  padding-right: 50px;
+  width: 300px;
+}
+
+form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="submit"],
+form select {
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #333333;
+}
+
+.form-card-body {
+  padding: 20px;
+  text-align: center;
+  color: #777777;
+  font-size: 0.9rem;
+}
+
+
+
+

@@ -33,11 +33,6 @@ git clone https://github.com/Irash-Perera/eWallet-WSO2API-GraphQL.git
 2. **Install the dependencies**
 Navigate to the project directory and install the dependencies in the client and server directories.
 ```
-cd server
-npm install
-```
-```
-cd frontend
 npm install
 ```
 
@@ -53,3 +48,37 @@ DATABASE_URI="mongodb+srv://xxxxxxxxxxxxx
 <GoogleOAuthProvider clientId='1013341919244-xxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com'>
 ```
 - Download the [WSO2 API Manager](https://wso2.com/api-manager/) and start the server. To start the server locally follow the instructions in the following [Quick Start Guide](https://apim.docs.wso2.com/en/latest/get-started/api-manager-quick-start-guide/).
+
+- After starting the WSO2 API Manager, navigate to the `https://localhost:9443/publisher` and create a new API.
+
+![create-api](./screenshots/wso2-apim-home.png)
+
+-Then select `Import GraphQL SDL` under `GraphQL` and import the `schema.graphql` file in the server directory.
+![import-graphql](./screenshots/select-graphql.png)
+
+- After importing the schema, enter the API details and create the API. From now on, follow the instructions in the [WSO2 API Manager Quick Start Guide](https://apim.docs.wso2.com/en/latest/get-started/api-manager-quick-start-guide/) to publish the API.
+
+- After pubishing the API, copy the API endpoint and paste it in the `frontend/main.jsx` file to connect Apollo Client to the GraphQL API.
+```
+const client = new ApolloClient({
+  uri: 'https://localhost:8243/eWallet/v1',
+  cache: new InMemoryCache(),
+  headers: {
+    // This is a test token, replace it with the actual token
+    authorization: `Bearer eyJ4NXQiOiJOV1F3T1RSa01qQTVxxxxxxxxxxxxxxxx`,
+  },
+});
+```
+
+4. **Run the application**  
+- Navigate to the project directory and run the following command to start the server.
+``` 
+npm start
+```
+- Navigate to the client directory and run the following command to start the client.
+```
+npm run dev
+```
+
+5. **Access the application**
+- Open the browser and navigate to `http://localhost:<PORT>` to access the application. `<PORT>` is the port number where the client is running.

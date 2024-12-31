@@ -13,7 +13,7 @@ function Login() {
   const navigate = useNavigate();
 
   const handleSuccess = (response) => {
-    const decoded = jwtDecode(response.credential); // Decode the JWT token
+    const decoded = jwtDecode(response.credential); 
     const user = decoded.name;
     const email = decoded.email;
     const token = response.credential;
@@ -29,7 +29,7 @@ function Login() {
   if (isLogged){
     return (
       <div>
-        <h1>You are not logged in!</h1>
+        <h1>You are logged in!</h1>
       </div>
     );
   }

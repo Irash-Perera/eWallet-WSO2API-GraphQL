@@ -5,7 +5,7 @@
 
 With this application, users can sign in with their Google account and create an eWallet, which can be used to manage their expenses and incomes as well as to analyze their transaction history.
 
-#### Technologies Used:
+## Technologies Used:
 - GraphQL : For the backend API
 - WSO2 API Manager : For API management
 - Apollo Client/Server : For GraphQL client and server
@@ -14,7 +14,7 @@ With this application, users can sign in with their Google account and create an
 - MongoDB : For the database
 - Google OAuth : For user authentication
 
-#### Screenshots:
+## Screenshots:
 | Page | Screenshot |
 | --- | --- |
 | Home Page | ![home-page](./screenshots/home.png) |
@@ -23,7 +23,7 @@ With this application, users can sign in with their Google account and create an
 | Dashboard | ![dashboard](./screenshots/dashboard.png) |
 | Add Transaction | ![add-transaction](./screenshots/add-transaction.png) |
 
-#### Setup:
+## Setup:
 
 1. **Clone the repository**
 Clone the repository using the following command.
